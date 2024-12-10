@@ -1,10 +1,8 @@
 var isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase());
 
     if (isMobile) {
-        // Если устройство мобильное, отображаем сообщение и выходим
         document.body.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: black; color: white; font-size: 24px;">Открой с ПК дура</div>';
     } else {
-        // Если устройство не мобильное, запускаем основной скрипт
         window.requestAnimationFrame =
             window.__requestAnimationFrame ||
             window.requestAnimationFrame ||
